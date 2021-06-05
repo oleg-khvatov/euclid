@@ -1,0 +1,71 @@
+:root {
+  --color-btn: #FF9900;
+  --font-color: #333333;
+  --background-color: #998A8A;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.body {
+  min-width: 320px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--font-color);
+  background-color: #E5E5E5;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {                      /*ВИЗУАЛЬНО СКРЫТЫЙ*/
+	position: absolute !important;        /*абсолютное позиционирование (наивысший приоритет)*/
+	clip: rect(1px 1px 1px 1px);          /*для IE6, IE7*/
+	clip: rect(1px, 1px, 1px, 1px);       /*Всё, что не помещается в эту область, будет обрезано и становится невидимым*/
+	padding: 0 !important;                /*внутренние отступы обнулены (!)*/
+	border: 0 !important;                 /*толщина рамки обнулена (!)*/
+	height: 1px !important;               /*высота (!)*/
+	width: 1px !important;                /*ширина (!)*/
+	overflow: hidden;                     /*переполнение не отображается*/
+}
+
+.container {
+  position: relative;
+  max-width: 1920px;
+  padding-left: 75px;
+  padding-right: 75px;
+  margin: 0 auto;
+}
+
+.outline {
+  outline: 1px solid #ff0000;
+}
+
+@media (max-width: 1470px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -1,0 +1,223 @@
+.design-solutions {
+  margin-bottom: 96px;
+}
+
+.design-solutions-block {
+	padding: 98px 79px 91px;
+	cursor: grab;
+}
+
+.design-solutions-block:active {
+	cursor: grabbing;
+}
+
+.swiper-slide {
+	background-color: var(--background-color); /*фон на случай сбоя загрузки картинки слайда*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.no-js .swiper-wrapper {
+	display: block;
+}
+
+.no-js .swiper-slide {
+	margin-bottom: 40px;
+}
+
+.no-js .swiper-slide:last-child {
+	margin-bottom: 0;
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+	width: 15px;
+	height: 15px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet:focus {
+	border: 2px solid #FFFFFF;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	opacity: 1;
+	background-color: #ffffff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	display: none;
+	color: #000000;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+	color: var(--color-btn);
+}
+
+.slide-1{
+	background-image: url("../img/low-angle-photo-of-balconies-2462015\ 1.jpg");
+}
+
+.slide-2{
+	background-image: url("../img/brown-and-blue-glass-building-2093076\ 1.jpg");
+}
+
+.slide-3{
+	background-image: url("../img/apartment-apartment-building-architecture-building-323705\ 1.jpg");
+}
+
+.design-solutions-h2 {
+	max-width: 841.76px;
+	padding: 5px 5px 5px 0;
+	margin-top: 0;
+	margin-bottom: 11px;
+	font-size: 70.3742px;
+	font-weight: 800;
+	line-height: 86px;
+	color: #FFFFFF;
+}
+
+.design-solutions-p {
+	max-width: 836.73px;
+	padding: 3px 3px 3px 0;
+	margin-top: 0;
+	margin-bottom: 93px;
+	font-weight: 700;
+	font-size: 23.4581px;
+	line-height: 29px;
+	color: #FFFFFF;
+}
+
+.btn {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 29px;
+	text-align: center;
+	color: #FFFFFF;
+	border: none;
+  background-color: var(--color-btn);
+	cursor: pointer;
+	transition-duration: 200ms;  
+}
+
+.btn:hover,
+.btn:focus {
+	opacity: 60%;
+}
+
+.design-solutions-btn {
+	padding: 26px 39px;
+	font-size: 23.4581px;
+}
+
+@media (max-width: 1470px) {
+	.design-solutions {
+		margin-bottom: 58px;
+	}
+
+	.swiper-pagination {
+		display: inherit;
+	}
+	  
+	.design-solutions-block {
+		padding: 154px 115px 114px 45px;
+	}
+
+	.swiper-container {
+		left: 0;
+		right: 0;
+	}
+
+	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+	  
+	.design-solutions-h2 {
+		margin-bottom: 2px;
+		font-size: 60px;
+		line-height: 73px;
+	}
+	  
+	.design-solutions-p {
+		margin-bottom: 107px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	  
+	.design-solutions-btn {
+		font-size: 24px;
+	} 
+}
+
+@media (max-width: 992px) {
+	.design-solutions-container {
+		padding: 0;
+	}
+	  
+	.design-solutions-block {
+		padding: 186px 10px 114px 49px;
+		background-image: unset;
+		background-color: unset;
+	}
+}
+
+@media (max-width: 600px) {
+	.design-solutions {
+		margin-bottom: 38px;
+		min-height: unset;
+		background-image: unset;
+		background-color: unset;
+	}
+
+	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+		display: none;
+	}
+
+	.design-solutions-container {
+		padding: 0 15px;
+	}
+
+	.design-solutions-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		min-height: unset;
+		padding: 27px 25px 41px 24px;
+	}
+
+	.design-solutions-h2 {
+		width: 247px;
+		padding-left: 7px;
+		margin-right: unset;
+		margin-bottom: 0;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	.design-solutions-p {
+		margin-bottom: 31px;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		font-weight: 500;
+	}
+
+	.design-solutions-btn {
+		padding: 5px 29px;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,205 @@
+.questions {
+  min-height: 669px;
+  margin-bottom: 101px;
+}
+
+.questions-h2 {
+  padding: 5px 5px 5px 2px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.questions-ul {
+  padding: 0 2px 0 5px;
+}
+
+.questions-li:first-child .questions-button {
+  border-top: 1px solid var(--font-color);
+}
+
+.questions-button {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 39px 65px 42px 0;
+  border: none;
+  border-bottom: 1px solid var(--font-color);
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--font-color);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../img/Ellipse\ 11.svg");
+  background-position: right center;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.questions-button::before,
+.questions-button::after {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 1px;
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  background-color: #666666;
+}
+
+.questions-button::after {
+  transform: rotate(90deg);
+}
+
+.questions-button:hover,
+.questions-button:focus {
+  color: var(--color-btn);
+  background-image: url("../img/Ellipse-dark.svg");
+  
+}
+
+.ui-accordion-header-active.questions-button::after {
+  transform: none;
+}
+
+@media (max-width: 1470px) {
+  .questions {
+    margin-bottom: 57px;
+  }
+  
+  .questions-h2 {
+    padding: 1px 2px 1px 0;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+  
+  .questions-ul {
+    padding: 0;
+  }
+
+  .questions-button {
+    padding-right: 160px;
+    padding-left: 0;
+    font-size: 20px;
+  }
+
+  .questions-li:first-child .questions-button {
+    padding-top: 48px;
+    padding-bottom: 43px;
+    background-position: right 42px;
+  }
+
+  .questions-li:first-child .questions-button::before,
+  .questions-li:first-child .questions-button::after {
+    top: 54%;
+  }
+
+  .questions-li:nth-child(2n) .questions-button {
+    padding-top: 23px;
+    padding-bottom: 27px;
+  }
+
+  .questions-li:nth-child(2n+1):not(:first-child) .questions-button {
+    padding-top: 38px;
+    padding-bottom: 43px;
+  }
+}
+
+@media (max-width: 992px) {
+  .questions {
+    margin-bottom: 57px;
+  }
+  
+  .questions-h2 {
+    padding-right: 0;
+    margin-bottom: 35px;
+    letter-spacing: -1.09px; /*ошибка в макете!!! h2 выходить за контейнер*/
+  }
+
+  .questions-button {
+    padding: 0 150px 0 0;  
+  }
+
+  .questions-li:first-child .questions-button {
+    padding-top: 33px;
+    padding-bottom: 26px;
+  }
+
+  .questions-li:nth-child(2n+1):not(:first-child) .questions-button {
+    padding-top: 23px;
+    padding-bottom: 26px;
+  }
+
+  .questions-li:nth-child(3n) .questions-button {
+    padding-right: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .questions {
+    margin-bottom: 39px;
+    min-height: unset;
+  }
+  
+  .questions-h2 {
+    margin-bottom: 13px;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: unset;
+  }
+
+  .questions-button {
+    padding: 0 62px 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px; /* в макете 22*/
+    background-size: 30px 30px;
+    background-position: right center;  
+  }
+
+  .accordion-p {
+    font-size: 14px;
+  }
+
+  .questions-li:first-child .questions-button {
+    padding-top: 20px;
+    padding-bottom: 23px;
+    background-position: right 31px; 
+  }
+
+  .questions-li:nth-child(2n) .questions-button {
+    padding-top: 20px;
+    padding-bottom: 23px;
+  }
+
+  .questions-li:nth-child(2) .questions-button {
+    padding-right: 70px; 
+  }
+
+  .questions-li:nth-child(4) .questions-button {
+    padding-right: 60px; 
+  }
+
+  .questions-li:nth-child(2n+1):not(:first-child) .questions-button {
+    padding-top: 20px;
+    padding-bottom: 23px;
+    padding-right: 50px;
+  }
+
+  .questions-li .questions-button::before,
+  .questions-li .questions-button::after {
+    width: 18.6px;
+    top: 49.5%;
+    right: 2%;
+  }
+
+  .questions-li:first-child .questions-button::before,
+  .questions-li:first-child .questions-button::after {
+    top: 49%;
+  }
+}
